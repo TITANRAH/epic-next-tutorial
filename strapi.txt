@@ -1,0 +1,21 @@
+npx create-strapi-app@latest backend
+
+npm i qs para leer las petiiciones http extrañas 
+npm i @types/qs
+
+
+qs permite que podamos crear un json que necesitemos desde strapi y donde pasa el json a la forma 
+en que strapi es consultado 
+
+la funcion flattenAttributes convierte losd atos mas legibles para evitar el anidamiento
+
+
+cada actualizacion puedo tipar solo la ctualizacion en este caso se agrego features e hice una interface
+especial para feeatures solamente
+
+cuando se agrega una nueva seccion en blocks en este caso 
+
+estara especificada en el nombre en el cammpo___component: 
+
+interactive query builder
+https://docs.strapi.io/dev-docs/api/rest/interactive-query-builder
