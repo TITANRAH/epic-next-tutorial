@@ -33,6 +33,8 @@ async function fetchData(url: string) {
 
 // essta funcion finalmente devuelve el fetch de arriba que pide el parametro de la url a la cual apuntara
 export async function getHomePageData() {
+
+  // throw new Error('Test error')
   const url = new URL("/api/home-page", baseUrl);
 
   //   qs toma este objeto y lo pasa al tipo de quyery que usa strapi con [] y demases
@@ -71,6 +73,18 @@ export async function getGlobalPageData() {
       "footer.socialLink",
     ],
   });
+
+  return await fetchData(url.href);
+}
+
+
+export async function getGlobalPageMetadata(){
+
+  const url = new URL("/api/global", baseUrl);
+
+  url.search = qs.stringify({
+    fields: ['title','description']
+  })
 
   return await fetchData(url.href);
 }

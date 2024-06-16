@@ -19,3 +19,5 @@ estara especificada en el nombre en el cammpo___component:
 
 interactive query builder
 https://docs.strapi.io/dev-docs/api/rest/interactive-query-builder
+
+gran documentacion https://developer.mozilla.org/en-US/
